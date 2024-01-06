@@ -1,3 +1,37 @@
-body{
-    background-color: pink;
+* {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+.calc-container {
+  border: 2px solid;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+padding: 5px;
+  width: 40%;
+  height: 70vh;
+  background-color: rgb(2, 23, 53);
+
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.display{
+    grid-column: 1/5;
+    grid-row: 1/3;
+    background-color: rgb(88, 238, 186);
+}
+
+.button{
+    background-color: rgb(127, 134, 137);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
 }
